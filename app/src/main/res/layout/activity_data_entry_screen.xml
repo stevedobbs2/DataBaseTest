@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Data_Entry_Activity_Screen">
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="91dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="FOOD GROUP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_meal_type" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="91dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="MEAL TYPE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_packages" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="91dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="PACKAGES"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_servings" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="91dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="SERVINGS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+    <TextView
+        android:id="@+id/tv_people"
+        android:layout_width="119dp"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:text="Current Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_return" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="156dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Name of The Food"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+    <Spinner
+        android:id="@+id/spinner_servings"
+        android:layout_width="110dp"
+        android:layout_height="39dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+    <Spinner
+        android:id="@+id/spinner_packages"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+    <Spinner
+        android:id="@+id/spinner_meal_type"
+        android:layout_width="132dp"
+        android:layout_height="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+    <Spinner
+        android:id="@+id/spinner_food_group"
+        android:layout_width="132dp"
+        android:layout_height="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+    <Button
+        android:id="@+id/button_save_data"
+        android:layout_width="287dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="44dp"
+        android:text="SAVE ENTRY DATA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_food_group" />
+
+    <Spinner
+        android:id="@+id/spinner_expiration"
+        android:layout_width="156dp"
+        android:layout_height="41dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
+        app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+    <Button
+        android:id="@+id/button_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:onClick="b_return"
+        android:text="RETURN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="91dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="EXPIRATION"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_people" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="91dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="NAME"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_expiration" />
+</androidx.constraintlayout.widget.ConstraintLayout>
