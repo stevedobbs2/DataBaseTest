@@ -1,7 +1,9 @@
 package com.example.databasetest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -79,5 +81,23 @@ public class MainActivity extends AppCompatActivity {
         }
 
         db.close();
+    }
+
+    //Creating new activity to entry new data
+    public void data_entry(View v){
+        Intent entry_data = new Intent(this, Data_Entry_Activity_Screen.class);
+        startActivity(entry_data);
+    }
+
+    //Creating new activity to view data
+    public void data_view(View v){
+        Intent view_data = new Intent(this, Data_View.class);
+        startActivity(view_data);
+    }
+
+    //Creating new activity to edit data
+    public void data_edit(View v){
+        Intent edit_data = new Intent(this, Data_Edit.class);
+        startActivity(edit_data);
     }
 }

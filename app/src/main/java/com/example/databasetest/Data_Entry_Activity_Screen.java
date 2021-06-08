@@ -1,4 +1,4 @@
-package com.example.project;
+package com.example.databasetest;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
